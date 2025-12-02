@@ -4,42 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sosna B. Birra | Home</title>
-    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="stylesheet" href="style.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 <div class="page-wrapper">
 
+    <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="nav-brand">Sosna B. Birra</div>
+
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
             <a href="research.html">Research</a>
             <a href="experience.html">Experience</a>
             <a href="publications.html">Publications</a>
             <a href="cv.html">CV</a>
             <a href="contact.html">Contact</a>
         </div>
+
         <div class="nav-icons">
-            <a href="mailto:sosna.birra@bison.howard.edu" title="Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="#" title="LinkedIn">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+            <a href="mailto:sosna.birra@bison.howard.edu"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </nav>
 
+    <!-- MAIN CONTENT -->
     <main class="main-content">
+
+        <!-- HERO SECTION -->
         <section class="hero">
             <h1 class="hero-name">Sosna B. Birra</h1>
             <p class="hero-title">Ph.D. Student in Mathematics · Howard University</p>
+
             <p class="hero-tagline">
-                I develop mathematical and statistical models for infectious diseases, with a focus on 
-                HIV drug resistance dynamics and quantitative approaches that promote health equity in 
-                under-resourced communities. :contentReference[oaicite:0]{index=0}
+                I am a Ph.D. student in the Department of Mathematics at Howard University with a strong 
+                interest in applying quantitative and computational methods to address public health 
+                challenges in under-resourced communities. My research focuses on mathematical and 
+                statistical models of infectious diseases—with a special emphasis on HIV drug resistance 
+                dynamics and treatment outcomes.
             </p>
+
             <div class="hero-buttons">
                 <a href="cv.html" class="btn btn-primary">View CV</a>
                 <a href="research.html" class="btn btn-outline">Explore Research</a>
@@ -47,28 +53,35 @@
             </div>
         </section>
 
-        <section style="margin-top:40px;">
-            <h2 class="section-title">Current Position</h2>
+        <!-- ABOUT ME (merged into home page) -->
+        <section style="margin-top: 50px;">
+            <h2 class="section-title">About Me</h2>
+
             <p class="section-subtitle">
-                Ph.D. student, Department of Mathematics, Howard University, Washington, DC. :contentReference[oaicite:1]{index=1}
+                My academic interests lie at the intersection of mathematics, epidemiology, and public health. 
+                I am driven by the potential of mathematical modeling to illuminate disease dynamics, support 
+                clinical decision-making, and improve health equity.
             </p>
-            <div class="card">
-                <p class="card-body">
-                    My work combines mathematical modeling, numerical simulation, and data analysis to better
-                    understand the dynamics of HIV and to support evidence-based decision-making in clinical and
-                    public health settings.
-                </p>
-            </div>
+
+            <p class="section-subtitle">
+                At Howard University, I contribute to research projects that use differential equations, 
+                numerical simulation, and data analysis to explore infectious disease mechanisms and evaluate 
+                treatment strategies. My long-term goal is to develop predictive models and decision-support 
+                tools that strengthen health systems in underserved communities.
+            </p>
         </section>
+
     </main>
 
     <footer>
         © <span id="year"></span> Sosna B. Birra
     </footer>
+
 </div>
 
 <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
